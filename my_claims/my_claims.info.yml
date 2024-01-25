@@ -1,0 +1,11 @@
+name: Claims Resource
+type: module
+description: Module for implementing claims.
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - datetime
+  - serialization
+
+libraries:
+  - my_claims/my_claims

@@ -1,0 +1,33 @@
+my_claims.claims_form:
+  path: '/claims-form'
+  defaults:
+    _form: '\Drupal\my_claims\Form\ClaimsForm'
+    _title: 'Submit Claims'
+  requirements:
+    _permission: 'access content'
+
+my_claims.claims_filter_form:
+  path: '/claims-filter-form'
+  defaults:
+    _form: '\Drupal\my_claims\Form\ClaimsFilterForm'
+    _title: 'Claims Filter Form'
+  requirements:
+    _permission: 'access content'
+
+my_claims.page:
+  path: '/claims-page'
+  defaults:
+    _controller: '\Drupal\my_claims\Controller\ClaimController::viewClaimsPage'
+    _title: 'View Claims Page'
+  requirements:
+    _permission: 'access content'
+
+my_claims.export_csv:
+  path: '/my_claims/export-csv'
+  defaults:
+    _controller: '\Drupal\my_claims\Controller\ClaimController::exportCsv'
+    _title: 'Export CSV'
+  requirements:
+    _permission: 'access content'
+
+
